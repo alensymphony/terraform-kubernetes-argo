@@ -29,8 +29,8 @@ spec:
         image: "{{workflow.parameters.terraform-docker-image}}"
         command: ["sh"]
         source: |
-          export AWS_ACCESS_KEY_ID="AKIA2AZOFS3HSRHZ2YF2"
-          export AWS_SECRET_ACCESS_KEY="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"
+          export AWS_ACCESS_KEY_ID="AWS_ACCESS_KEY_ID"
+          export AWS_SECRET_ACCESS_KEY="AWS_SECRET_ACCESS_KEY"
           export AWS_DEFAULT_REGION="eu-west-2"
           
           cp /home/terraform/*.tf /home/argo/
